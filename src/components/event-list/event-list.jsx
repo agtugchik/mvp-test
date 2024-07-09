@@ -9,7 +9,9 @@ export const EventList = () => {
   const eventOnCLickHandler = (id) => navigate(`/event/${id}`);
 
   const actualEvents = () =>
-    events.filter((event) => moment().diff(event.date, "milliseconds") < 0);
+    events.filter(
+      (event) => moment(event.date).diff(moment(), "milliseconds") > 0
+    );
 
   return (
     <List
