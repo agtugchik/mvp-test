@@ -18,6 +18,7 @@ export default defineConfig({
       "@styles": path.resolve(__dirname, "./src/styles"),
       "@pages": path.resolve(__dirname, "./src/pages"),
       "@constants": path.resolve(__dirname, "./src/constants"),
+      "@context": path.resolve(__dirname, "./src/context"),
     },
   },
 });
