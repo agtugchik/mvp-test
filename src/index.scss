@@ -1,8 +1,6 @@
 @import "@styles/reset.scss";
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -10,6 +8,9 @@
 }
 
 body {
+  * {
+    font-family: "Mortal Kombat 4", sans-serif;
+  }
   display: flex;
   place-items: center;
   min-width: 320px;

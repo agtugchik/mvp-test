@@ -4,5 +4,3 @@ export const routes = {
   EVENT: "/event/:id",
   ELSE: "*",
 };
-
-export default routes;

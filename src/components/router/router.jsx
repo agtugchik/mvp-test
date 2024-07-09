@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { EventPage } from "@pages/event-page";
 import { HomePage } from "@pages/home-page";
-import routes from "@constants/routes";
+import { routes } from "@constants/routes";
 
 export const Router = () => (
   <Routes>
