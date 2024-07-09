@@ -13,6 +13,8 @@ export const EventList = () => {
       (event) => moment(event.date).diff(moment(), "milliseconds") > 0
     );
 
+  const isToday = (event) => moment(event.date).isSame(moment(), "day");
+
   return (
     <List
       dataSource={actualEvents()}
@@ -29,11 +31,7 @@ export const EventList = () => {
                   {event.firstTeam} vs {event.secondTeam}
                 </h2>
                 <h3>Round {event.id}</h3>
-                {moment(event.date).isSame(moment(), "day") ? (
-                  <h3>Today</h3>
-                ) : (
-                  <h3>Coming soon...</h3>
-                )}
+                {isToday(event) ? <h3>Today</h3> : <h3>Coming soon...</h3>}
               </div>
             }
           />
