@@ -1,0 +1,13 @@
+.logo {
+  font-size: 26px;
+  cursor: pointer;
+  display: flex;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  .word {
+    &::first-letter {
+      color: red;
+    }
+  }
+}

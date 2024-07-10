@@ -3,6 +3,7 @@ import { Layout } from "antd";
 import { Router } from "@components/router";
 import styles from "./app.module.scss";
 import AppContext from "@context";
+import { Logo } from "../ui/logo";
 
 const { Header, Content } = Layout;
 
@@ -23,7 +24,9 @@ export const App = () => {
   return (
     <AppContext.Provider value={{ contextValues, setMessage, resetMessage }}>
       <Layout className={styles.app}>
-        <Header>header</Header>
+        <Header>
+          <Logo />
+        </Header>
         <Layout>
           <Content>
             <Router />
