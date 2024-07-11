@@ -37,7 +37,7 @@ export const EventPage = () => {
         </h2>
         <h2>Round {event?.id}</h2>
         <h3>{moment(event.date).format("MMM Do YYYY")}</h3>
-        <Form.Item name="radio-group" label="Coefficient">
+        <Form.Item name="radio-group" label="Coefficient:">
           <Radio.Group onChange={radioOnCHangeHandler}>
             <Radio value="firstTeam">
               {event.firstTeam}: {event.winFirstTeam}

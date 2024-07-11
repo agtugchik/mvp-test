@@ -6,6 +6,12 @@
       label {
         color: #b2beb5;
       }
+      div[class*="ant-radio-group"] {
+        @media (max-width: 479px) {
+          display: flex;
+          flex-direction: column;
+        }
+      }
     }
   }
 }
