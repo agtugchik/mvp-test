@@ -2,6 +2,7 @@ import { List } from "antd";
 import { events } from "@constants/events";
 import { useNavigate } from "react-router-dom";
 import moment from "moment";
+import styles from "./event-list.module.scss";
 
 export const EventList = () => {
   const navigate = useNavigate();
@@ -17,12 +18,14 @@ export const EventList = () => {
 
   return (
     <List
+      className={styles.eventList}
       dataSource={actualEvents()}
       renderItem={(event) => (
         <List.Item
+          className={styles.listItem}
           key={event.id}
           onClick={() => eventOnCLickHandler(event.id)}
-          extra={<img src={event.logoSrc} />}
+          extra={<img className={styles.img} src={event.logoSrc} />}
         >
           <List.Item.Meta
             title={
@@ -31,7 +34,11 @@ export const EventList = () => {
                   {event.firstTeam} vs {event.secondTeam}
                 </h2>
                 <h3>Round {event.id}</h3>
-                {isToday(event) ? <h3>Today</h3> : <h3>Coming soon...</h3>}
+                {isToday(event) ? (
+                  <h3 className={styles.today}>Today</h3>
+                ) : (
+                  <h3 className={styles.today}>Coming soon...</h3>
+                )}
               </div>
             }
           />

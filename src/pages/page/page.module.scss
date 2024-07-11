@@ -1,0 +1,10 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+  background-color: #433f51;
+  padding: 0 20px;
+  @media (max-width: 479px) {
+    padding: 0 10px;
+  }
+}

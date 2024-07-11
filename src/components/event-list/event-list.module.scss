@@ -1,0 +1,17 @@
+.listItem[class*="ant-list-item"] {
+  padding: 10px 0;
+  background-color: #433f51;
+  @media (max-width: 479px) {
+    flex-direction: column;
+  }
+  div[class*="ant-list-item-meta"] {
+    width: 100%;
+    @media (max-width: 479px) {
+      width: 300px;
+    }
+  }
+  .img {
+    width: 300px;
+    height: auto;
+  }
+}

@@ -24,7 +24,7 @@ export const App = () => {
   return (
     <AppContext.Provider value={{ contextValues, setMessage, resetMessage }}>
       <Layout className={styles.app}>
-        <Header>
+        <Header className={styles.header}>
           <Logo />
         </Header>
         <Layout>

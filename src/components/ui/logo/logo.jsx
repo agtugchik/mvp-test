@@ -11,8 +11,8 @@ export const Logo = () => {
 
   return (
     <h1 onClick={onClickHandler} className={styles.logo}>
-      <div className={styles.word}>{width > 480 ? "Mortal" : "M"}</div>
-      <div className={styles.word}>{width > 480 ? "Kombat" : "K"}</div>
+      <div className={styles.word}>{width > 479 ? "Mortal" : "M"}</div>
+      <div className={styles.word}>{width > 479 ? "Kombat" : "K"}</div>
     </h1>
   );
 };
