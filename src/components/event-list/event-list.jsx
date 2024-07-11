@@ -31,13 +31,14 @@ export const EventList = () => {
             title={
               <div>
                 <h2>
-                  {event.firstTeam} vs {event.secondTeam}
+                  <span className={styles.team}>{event.firstTeam}</span> vs{" "}
+                  <span className={styles.team}>{event.secondTeam}</span>
                 </h2>
                 <h3>Round {event.id}</h3>
                 {isToday(event) ? (
                   <h3 className={styles.today}>Today</h3>
                 ) : (
-                  <h3 className={styles.today}>Coming soon...</h3>
+                  <h3 className={styles.soon}>Coming soon...</h3>
                 )}
               </div>
             }

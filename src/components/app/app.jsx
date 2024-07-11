@@ -28,7 +28,7 @@ export const App = () => {
           <Logo />
         </Header>
         <Layout>
-          <Content>
+          <Content className={styles.main}>
             <Router />
           </Content>
         </Layout>

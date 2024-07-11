@@ -7,6 +7,8 @@ import { useContext, useState } from "react";
 import { routes } from "../../constants/routes";
 import AppContext from "@context";
 
+import styles from "./event-page.module.scss";
+
 export const EventPage = () => {
   const [form] = Form.useForm();
   const navigate = useNavigate();
@@ -22,7 +24,7 @@ export const EventPage = () => {
   };
 
   return (
-    <Page>
+    <Page className={styles.eventPage}>
       <Form
         form={form}
         onFinish={() => {

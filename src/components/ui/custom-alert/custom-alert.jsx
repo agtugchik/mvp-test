@@ -13,6 +13,7 @@ export const CustomAlert = () => {
     <>
       {contextValues.isActiveAlert && (
         <Alert
+          style={{ marginTop: "10px" }}
           message={`Thank you, your choice is ${
             contextValues.event[contextValues.userChoice] || "tie"
           } with coefficient ${

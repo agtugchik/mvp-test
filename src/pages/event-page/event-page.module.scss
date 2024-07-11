@@ -1,0 +1,11 @@
+.eventPage {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  form[class*="ant-form"] {
+    div[class*="ant-form-item"] {
+      label {
+        color: #b2beb5;
+      }
+    }
+  }
+}
